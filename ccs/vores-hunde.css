@@ -1,0 +1,255 @@
+
+/* buttons */
+button {
+    font-family: 'Dongle';
+    padding-block: 1rem;
+    padding-inline: 5rem;
+    font-size: 3rem;
+    border: 0;
+    background: url(../img/button-background-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--text);
+
+    cursor: pointer;
+}
+
+/* h2 */
+h2 span {
+    font-size: 2.5rem;
+}
+
+/* Brombær */
+
+.left-dog-container {
+    width: 100%;
+    height: 30em;
+    background-image: url(../img/vores-hunde-venstre-baggrund.png);
+    background-repeat: no-repeat;
+
+    display: flex;
+}
+
+.left-dog-container img {
+    transform: translate(-8rem, -8rem);
+}
+
+.left-dog-content {
+    transform: translate(-10rem, 3rem);
+    width: 45%;
+}
+
+.left-dog-content h3 {
+    font-size: 3rem;
+    font-family: "Just Another Hand";
+}
+
+.left-dog-content article p {
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+.read-more-button-brombaer {
+    transform: translate(40rem, 0rem);
+}
+
+.dog-barking-sound-button {
+    z-index: 2000;
+    transform: translate(45rem, 0);
+}
+
+/* Hank */
+
+.right-dog-container {
+    margin-block: 5rem;
+    width: 100%;
+    height: 30em;
+    background-image: url(../img/vores-hunde-højre-baggrund.png);
+    background-repeat: no-repeat;
+
+    display: flex;
+}
+
+.right-dog-container img {
+    transform: translate(34rem, -6rem);
+}
+
+.right-dog-content {
+    transform: translate(36rem, 3rem);
+    width: 45%;
+    text-align: right;
+}
+
+.right-dog-content h3 {
+    font-size: 3rem;
+    font-family: "Just Another Hand";
+}
+
+.right-dog-content article p {
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+/* Hank */
+
+.hank_img {
+    height: 140%;
+}
+
+.read-more-button-hank {
+    transform: translate(-40rem, 0rem);
+}
+
+
+
+/* footer */
+
+footer {
+    margin-top: 5rem;
+    position: static;
+    opacity: 1;
+}
+
+
+
+/* Overlay Brombær */
+
+
+.overlay_wrapper {
+    margin: auto;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.overlay_wrapper::backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.popup {
+    padding: 2rem;
+    background-color: #FFFFFF;
+    margin-top: -2rem;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.close-btn {
+    width: 100%;
+    font-size: 5rem;
+    padding: 0;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.pop_up_hero_img {
+    width: 100%;
+}
+
+/* Top content in overlay */
+
+.first_content_popup {
+    display: flex;
+    gap: 2rem;
+    background-image: url("../img/brombaer-overlay-oeverste-baggrund.png");
+    background-repeat: no-repeat;
+}
+
+.first_content_popup img {
+    transform: translate(0%, -25%);
+}
+
+.first_content_popup p {
+    transform: translate(0%, 25%);
+    width: 40%;
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+.first_content_divider {
+    transform: translate(0%, 0%);   
+}
+
+/* second content in overlay */
+
+.second_content_popup {
+    transform: translate(11%, -20%);
+    display: flex;
+    gap: 2rem;
+
+    background-image: url("../img/brombaer-overlay-nr-to-baggrund.png");
+    background-repeat: no-repeat;
+}
+
+.second_content_popup img {
+    transform: translate(68%, -20%);
+}
+
+.second_content_popup p {
+    transform: translate(15%, 25%);
+    width: 40%;
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+.second_content_divider {
+    transform: translate(100%, -60%);
+}
+
+/* third content in overlay */
+
+.third_content_popup {
+    display: flex;
+    gap: 2rem;
+
+    transform: translate(0%, -75%);
+}
+
+.third_content_popup img {
+    transform: translate(0%, -15%);
+}
+
+.third_content_popup p {
+    transform: translate(10%, 35%);
+    width: 30%;
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+.third_content_divider {
+    transform: translate(10%, -140%);
+}
+
+/* fourth content in overlay */
+
+.fourth_content_popup {
+    display: flex;
+    gap: 2rem;
+    transform: translate(10%, -180%);
+    
+    background-image: url("../img/brombaer-overlay-nr-fire-baggrund.png");
+    background-repeat: no-repeat;
+    height: 32rem;
+}
+
+.fourth_content_popup img {
+    transform: translate(78%, -25%);
+}
+
+.fourth_content_popup p {
+    transform: translate(80%, 20%);
+    width: 35%;
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+.read_about_Potefryd_container {
+    transform: translate(-280%, 55%);
+
+}
+
+.read_about_Potefryd_link {
+    font-size: 2rem;
+    color: var(--text);
+}

@@ -1,0 +1,497 @@
+:root {
+    --backgroundColor: #f2f2f2;
+    --text: #44311E;
+    --white: #f2f2f2;
+    --brown: #44311E;
+}
+
+/* error-404-page */
+.error-404-img-container {
+    display: grid;
+    height: 50em;
+    margin-bottom: 25rem;
+}
+
+.error-404-img {
+    width: 100%;
+}
+
+.error-page-footer {
+    margin-top: 5rem;
+    position: static;
+    opacity: 1;
+}
+
+/* pre styling */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--text);
+    font-family: 'Dongle', sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: "Just Another Hand";
+    letter-spacing: 0.2rem;
+    font-size: 4.5rem;
+}
+
+.active_page_in_nav {
+    border-bottom: 1px solid var(--brown) ;
+}
+
+
+.wrapper {
+    width: 95%;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.cta-button {
+    width: 22%;
+    background-image: url("../img/button-background-img.png");
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+.cta-button a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: var(--text);
+}
+
+/* combing animista.net animations with custom classes */
+
+.customScrollInRight {
+    opacity: 0;
+}
+
+.customScrollInLeft {
+    opacity: 0;
+}
+
+.customScrollInRight.active {
+    opacity: 1;
+    -webkit-animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.customScrollInLeft.active {
+    opacity: 1;
+    -webkit-animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+.custom_hover_img {
+    transition: all 500ms;
+}
+
+.custom_hover_img:hover {
+    scale: 1.05;
+}
+
+button {
+    transition: all 500ms;
+}
+
+button:hover {
+    scale: 1.05;
+}
+
+a {
+    transition: all 500ms;
+}
+
+a:hover {
+    scale: 1.05;
+}
+
+/* styling of nav bar */
+
+/* box-shadow made with
+https://cssgenerator.org/box-shadow-css-generator.html
+*/
+.header.sticking {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    width: 95%;
+    margin: auto;
+
+    background-color: var(--backgroundColor);
+
+    transition: all 500ms;
+}
+
+.header a {
+    color: var(--text);
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.header a:hover {
+    opacity: 0.7;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_list_elements {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo_img {
+    padding-top: 1rem;
+}
+
+.booking_link ul li a {
+    font-family: 'Just Another Hand';
+    padding-inline: 5em;
+    padding-block: 0.45em;
+    background-size: cover;
+    background-image: url("../img/Booking_blob.svg");
+    font-size: 3.5rem;
+}
+
+
+.booking_link ul,
+.dropdown {
+    list-style: none;
+}
+
+.dropdown {
+    display: none;
+    width: 100%;
+    transform: translateX(-1em);
+    padding: 0.5em;
+    background-color: var(--backgroundColor);
+
+    border-bottom: solid 1px black;
+    filter: drop-shadow(2px 2px 2px black);
+    border-radius: 5%;
+}
+
+.dropdown li a {
+    display: block;
+}
+
+.nav_list_elements li:hover>ul {
+    display: block;
+    position: absolute;
+    max-width: 21em;
+}
+
+
+/* styling of the hero section */
+
+.hero_section img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hero_section a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.hero_section article {
+    transform: translate(0rem, -7rem);
+}
+
+/* membership CTA */
+
+.membership {
+    width: 51%;
+    height: 16.5rem;
+    background-image: url("../img/bliv-medlem-bg.png");
+    background-repeat: no-repeat;
+    transform: translate(0, -4rem);
+}
+
+.membership h2 {
+    transform: translate(4rem, 2rem);
+}
+
+.membership p {
+    transform: translate(4rem, 2rem);
+    font-size: 2.5rem;
+    width: 40%;
+    line-height: 65%;
+}
+
+/* booking a time CTA */
+
+.booking_a_time {
+    margin-left: auto;
+    width: 60%;
+    height: 22.5rem;
+    background-image: url("../img/booking-af-tider.png");
+
+    background-repeat: no-repeat;
+    transform: translate(0, -12rem);
+}
+
+.booking_a_time h2 {
+    transform: translate(12rem, 10rem);
+}
+
+.booking_a_time p {
+    transform: translate(12rem, 10rem);
+    font-size: 2.5rem;
+    width: 40%;
+    line-height: 65%;
+}
+
+
+/* about Potefryd */
+
+.about_Potefryd {
+    transform: translate(0, -5rem);
+    width: 100%;
+    height: 38rem;
+    object-fit: contain;
+    background-image: url("../img/om-potefryd-wave-bg.png");
+}
+
+.about_Potefryd img {
+    transform: translate(0rem, -10rem);
+}
+
+.about_Potefryd h2 {
+    transform: translate(30rem, -30rem);
+}
+
+.about_Potefryd p {
+    width: 60%;
+    font-family: "Dongle";
+    font-size: 2.5rem;
+    transform: translate(30rem, -30rem);
+    line-height: 100%;
+}
+
+.about_Potefryd .cta-button {
+    transform: translate(75rem, -30rem);
+}
+
+.about_Potefryd .cta-button a {
+    padding-left: 6.5rem;
+}
+
+
+.four-facts-img {
+    transform: translate(0rem, -10rem);
+    width: 100%;
+    /* height: 20rem; */
+    object-fit: cover;
+}
+
+
+.meet-our-dogs {
+    transform: translate(0, -5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meet-our-dogs a article {
+    text-align: center;
+}
+
+.meet-our-dogs a article p {
+    font-size: 2.5rem;
+}
+
+.meet-our-dogs a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.meet-our-dogs 
+
+/* events */
+
+.events {
+    width: 100%;
+    height: 52.5rem;
+}
+
+.events article {
+    transform: translate(2rem, 12rem);
+}
+
+.events article p {
+    width: 60%;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    line-height: 100%;
+}
+
+.events .cta-button {
+    transform: translate(3rem, -30rem);
+}
+
+.events .cta-button a {
+    padding-left: 6.5rem;
+}
+
+.event_images {
+    display: flex;
+    flex-direction: column;
+}
+
+.event_images img {
+    margin-left: auto;
+    width: 30em;
+    object-fit: contain;
+}
+
+.event_images :nth-child(1) {
+    transform: translate(3rem, -27rem);
+}
+
+.event_images :nth-child(2) {
+    transform: translate(3.5rem, -27rem);
+}
+
+
+
+/* SoMe */
+
+.SoMe-container {
+    transform: translate(0rem, -25rem);
+    padding-bottom: 60rem;
+    width: 100%;
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-image: url("../img/SoMe-baggrund.png");
+    margin-bottom: -20rem;
+}
+
+.SoMe-container aside {
+    transform: translate(70rem, 10rem);
+}
+
+.SoMe-container aside p {
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--white);
+    font-size: 2.5rem;
+    width: 30%;
+    line-height: 100%;
+}
+
+.SoMe-container aside p a {
+    color: var(--white);
+}
+
+/* footer */
+
+.footer-paw-button-container {
+    cursor: pointer;
+    position: fixed;
+    bottom: 0rem;
+    right: 0rem;
+    z-index: 999;
+    opacity: 0.6;
+    scale: 0.7;
+    animation: example;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    transition: all 200ms ease-in-out;
+}
+
+.open_footer_arrow {
+    scale: 0.5;
+    transform: translate(6rem, -18rem);
+}
+
+/* .footer-paw-button-container:hover {
+    opacity: 1;
+    scale: 0.8;
+} */
+
+@keyframes example {
+    0% {
+        scale: 0.7;
+        opacity: 0.6;
+    }
+    50% {
+        scale: 0.8;
+        opacity: 1;
+    }
+    100% {
+        scale: 0.7;
+        opacity: 0.6;
+    }
+  }
+
+
+footer {
+    /* display: none; */
+    opacity: 0;
+    /* transform: translate(0rem, -30rem); */
+    transition: all 200ms ease-in-out;
+    
+    /* transform: translate(0rem, -15rem); */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 19rem;
+    background-repeat: no-repeat;
+    background-image: url("../img/Foooter_BG_test.png");
+}
+
+.footer_wrapper {
+    width: 80%;
+    height: 50%;
+    transform: translate(15rem, 8rem);
+    display: flex;
+    gap: 3.5rem;
+}
+
+footer h3 {
+    font-family: "Just Another Hand";
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+}
+
+.footer_wrapper p,
+.footer_wrapper a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+.footer_wrapper_right {
+    display: flex;
+    gap: 3.5rem;
+    margin-left: auto;
+}
+
